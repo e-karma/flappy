@@ -1,0 +1,26 @@
+.navbar-secondary {
+  li.active a {
+    background-color: #eee;
+  }
+  margin-bottom: 0;
+  min-height: 15px;
+  padding: 5px inherit;
+  border: 0;
+}
+
+.navbar.navbar-inverse {
+  background-color: #444444;
+  border-radius: 0;
+  border: 0;
+  min-height: 15px;
+  padding: 9px inherit;
+  .btn {
+    padding: 0 5px;
+    text-transform:capitalize;
+  }
+}
+
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

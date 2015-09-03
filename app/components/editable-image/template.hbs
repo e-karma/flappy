@@ -1,0 +1,7 @@
+{{#if isEditing}}
+  {{filepicker-io pickSuccess="pickSuccess"}}
+{{/if}}
+{{#if loadingImage}}
+  <img src='/images/ajax-loader.gif'>
+{{/if}}
+<img class='section-image' {{bind-attr height=height width=width src=src}}>

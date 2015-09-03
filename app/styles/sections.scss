@@ -1,0 +1,21 @@
+.flappy-section {
+  position: relative;
+
+  &.hover {
+    outline: 1px dotted #E68A6E;
+  }
+
+  .show-on-hover {
+    display: none;
+  }
+
+  &.hover {
+    a.show-on-hover {
+      display: inline;
+      color: #e68a6e;
+      right: 2px;
+      top: 0;
+      position: absolute;
+    }
+  }
+}
