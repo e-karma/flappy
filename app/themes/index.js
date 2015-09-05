@@ -1,3 +1,4 @@
+// Manually adding the name of a theme into the string below is how to add it to the registry
 export var themeNames = "yankees water-world tigers landing-page".w();
 
 var defaultThemeName = 'default';

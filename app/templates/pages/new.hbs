@@ -9,27 +9,31 @@
       <div class="gallery">
         <ul class="list-unstyled list-inline">
           searchthistexttofinderror
-          {{#each pages as |page|}}
-            <li>
-              {{#link-to 'editor' page.prototypePage class="link-text-color"}}
-                <div class="picture">
-                  <div class="tags">
+          {{#each model as |page|}}
+            {{#page-theme page=page}}
+            
+              <li>
+                {{#link-to 'editor' page.prototypePage class="link-text-color"}}
+                  <div class="picture">
+                    <div class="tags">
 
-                  </div>
-                  <div class="actions">
-                    <div class="pull-left">
-                      <small>
-                        <i class="icon-user"></i>
-                        {{page.displayName}}
-                      </small>
                     </div>
-                    <div class="pull-right">
+                    <div class="actions">
+                      <div class="pull-left">
+                        <small>
+                          <i class="icon-user"></i>
+                          {{page.displayName}}
+                        </small>
+                      </div>
+                      <div class="pull-right">
+                      </div>
                     </div>
+                    <img src="{{page.thumbnailUrl}}" class="image-resize" />
                   </div>
-                  <img src="{{page.thumbnailUrl}}" class="image-resize" />
-                </div>
-              {{/link-to}}
-            </li>
+                {{/link-to}}
+              </li>
+
+            {{/page-theme}}
           {{/each}}
         </ul>
       </div>
