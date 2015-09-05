@@ -1,4 +1,13 @@
+<!--Old way that triggered error -->
 {{render-styles view.theme}}
+
+<!-- Old way that triggered Error
 {{#each section in sections}}
+  {{render-section themeName section}}
+{{/each}}
+-->
+<!-- deprecation went away with this -->
+{{#each sections as |section|}}
+  <!--Is this below correct w/ new way?-->
   {{render-section themeName section}}
 {{/each}}

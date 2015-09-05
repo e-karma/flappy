@@ -9,7 +9,7 @@
       <div class="gallery">
         <ul class="list-unstyled list-inline">
           searchthistexttofinderror
-          {{#each page in pages itemController="pages/page"}}
+          {{#each pages as |page|}}
             <li>
               {{#link-to 'editor' page.prototypePage class="link-text-color"}}
                 <div class="picture">
@@ -26,7 +26,7 @@
                     <div class="pull-right">
                     </div>
                   </div>
-                  <img {{bind-attr src=page.thumbnailUrl}} class="image-resize" />
+                  <img src="{{page.thumbnailUrl}}" class="image-resize" />
                 </div>
               {{/link-to}}
             </li>

@@ -5,11 +5,11 @@ export default Ember.Controller.extend({
     var model = this.get('model');
     if (model){
       var page = {
-        themeName: this.get('parentController.name'),
+        themeName: this.get('model.parentController.name'),
         sections: JSON.parse(JSON.stringify(model.sections))
       };
       return page;
     }
     return null;
-  }.property('model', 'parentController.name')
+  }.property('model', 'model.parentController.name')
 });

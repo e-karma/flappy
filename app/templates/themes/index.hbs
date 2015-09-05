@@ -7,7 +7,7 @@
     <div class="box-content">
       <div class="gallery">
         <ul class="list-unstyled list-inline">
-          {{#each theme in model}}
+          {{#each model as |theme|}}
             <li>
               {{#link-to 'pages.new' theme class="link-text-color"}}
                 <div class="picture">
@@ -19,7 +19,7 @@
                       {{theme.displayName}}
                     </div>
                   </div>
-                  <img {{bind-attr src=theme.thumbnailUrl}} class="image-resize" />
+                  <img src="{{theme.thumbnailUrl}}" class="image-resize" />
                 </div>
               {{/link-to}}
             </li>
