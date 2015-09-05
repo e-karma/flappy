@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 import {lookupTheme} from '../themes/index';
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
   theme: function(){
     return lookupTheme(this.container, this.get('themeName'));
   }.property('themeName'),

@@ -49,7 +49,7 @@ export default Ember.Object.extend({
         data: {
           headline: 'Death to the Stock Photo: Special Thanks',
           text: 'A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.',
-          imageSrc: 'http://start-up.solutions/assets/preview/covers/mountainbeach-b442006bbceeaf8311ebfec1ca3c10fd.jpeg'
+          imageSrc: 'http://placehold.it/200&text=two+column'
         }
       },{
         templateName: 'two-column-left-image',

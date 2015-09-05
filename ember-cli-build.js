@@ -17,7 +17,11 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 //   'assets/app.css');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {});
+  var app = new EmberApp(defaults, {
+    emberCliFontAwesome: {
+      useScss: true
+    }
+  });
 
   app.import('bower_components/bootstrap/dist/js/bootstrap.js');
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');

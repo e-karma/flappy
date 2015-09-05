@@ -14,8 +14,11 @@
     "qunit": "~1.17.1",
     "bootstrap": "~3.2.0",
     "jquery-migrate": "~1.2.1",
-    "font-awesome": "~4.1.0",
+    "font-awesome": "~4.4.0",
     "jquery-minicolors": "~2.1.6",
     "summernote": "~0.5.1"
+  },
+  "resolutions": {
+    "font-awesome": "~4.4.0"
   }
 }
