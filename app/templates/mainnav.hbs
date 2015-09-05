@@ -1,0 +1,284 @@
+<div id='main-nav-bg'></div>
+<nav id='main-nav'>
+  <div class='navigation'>
+    <div class='search'>
+      <form action='search_results.html' method='get'>
+        <div class='search-wrapper'>
+          <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text" />
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+        </div>
+      </form>
+    </div>
+    <ul class='nav nav-stacked'>
+      <li>
+        {{#link-to 'index'}}
+          <i class='icon-dashboard'></i>
+          <span>Dashboard</span>
+        {{/link-to}}
+      </li>
+      <li>
+        <a {{action 'toggle' 'forms'}} href='#'>
+          <i class='icon-edit'></i>
+          <span>Forms</span>
+          <i class='icon-angle-down angle-down'></i>
+        </a>
+
+        {{#if expandForms}}
+          <ul class='in nav nav-stacked dropdown-menu'>
+            <li>
+              {{#link-to 'form_styles'}}
+                <i class='icon-caret-right'></i>
+                <span>Form styles and features</span>
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'form_components'}}
+                <i class='icon-caret-right'></i>
+                <span>Form components</span>
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'validations'}}
+                <i class='icon-caret-right'></i>
+                <span>Validations</span>
+              {{/link-to}}
+            </li>
+            <li>
+              {{# link-to 'wizard'}}
+                <i class='icon-caret-right'></i>
+                <span>Wizard</span>
+              {{/link-to}}
+            </li>
+          </ul>
+        {{/if}}
+      </li>
+      <li>
+        <a {{action 'toggle' 'widgets'}} class='dropdown-collapse ' href='#'>
+          <i class='icon-tint'></i>
+          <span>UI Elements & Widgets</span>
+          <i class='icon-angle-down angle-down'></i>
+        </a>
+        {{#if expandWidgets}}
+        <ul class='in nav nav-stacked'>
+          <li class=''>
+            {{#link-to 'ui_elements'}}
+              <i class='icon-caret-right'></i>
+              <span>UI Elements</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'widgets'}}
+              <i class='icon-caret-right'></i>
+              <span>Widgets</span>
+            {{/link-to}}
+          </li>
+        </ul>
+        {{/if}}
+      </li>
+      <li class=''>
+        {{#link-to 'buttons_and_icons'}}
+          <i class='icon-star'></i>
+          <span>Buttons & Icons</span>
+        {{/link-to}}
+      </li>
+      <li>
+        <a {{action 'toggle' 'components'}} class='dropdown-collapse' href='#'>
+          <i class='icon-cogs'></i>
+          <span>Components</span>
+          <i class='icon-angle-down angle-down'></i>
+        </a>
+        {{#if expandComponents}}
+        <ul class='in nav nav-stacked'>
+          <li class=''>
+            {{#link-to 'charts'}}
+              <i class='icon-bar-chart'></i>
+              <span>Charts</span>
+            {{/link-to}}
+          </li>
+          <li class='active'>
+            {{#link-to 'address_book'}}
+              <i class='icon-envelope'></i>
+              <span>Address book</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'chats'}}
+              <i class='icon-comments'></i>
+              <span>Chats</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'filetrees'}}
+              <i class='icon-list-ul'></i>
+              <span>File trees</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'fileupload'}}
+              <i class='icon-file'></i>
+              <span>Fileupload</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'todo'}}
+              <i class='icon-list-alt'></i>
+              <span>Todo list</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'wysiwyg'}}
+              <i class='icon-paste'></i>
+              <span>WYSIWYG</span>
+            {{/link-to}}
+          </li>
+        </ul>
+        {{/if}}
+      </li>
+      <li class=''>
+        {{#link-to tables}}
+          <i class='icon-table'></i>
+          <span>Tables</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to grid}}
+          <i class='icon-th'></i>
+          <span>Grid</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to type}}
+          <i class='icon-font'></i>
+          <span>Typography</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to calendar}}
+          <i class='icon-calendar'></i>
+          <span>Calendar</span>
+        {{/link-to}}
+      </li>
+      <li>
+        <a {{action 'toggle' 'pages'}} class='dropdown-collapse ' href='#'>
+          <i class='icon-book'></i>
+          <span>Example pages</span>
+          <i class='icon-angle-down angle-down'></i>
+        </a>
+        {{#if expandPages}}
+        <ul class='in nav nav-stacked'>
+          <li class=''>
+            <!--
+
+            -- THESE ARE MISSING --
+              <i class='icon-money'></i>
+              <span>Invoice</span>
+          </li>
+          -->
+        </li>
+          <li class=''>
+            {{#link-to 'timeline'}}
+              <i class='icon-time'></i>
+              <span>Timeline</span>
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'pricing_tables'}}
+              <i class='icon-table'></i>
+              <span>Pricing tables</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'user_profile'}}
+              <i class='icon-user'></i>
+              <span>User profile</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'err404'}}
+              <i class='icon-question-sign'></i>
+              <span>404 Error</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'err500'}}
+              <i class='icon-cogs'></i>
+              <span>500 Error</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'sign_in'}}
+              <i class='icon-signin'></i>
+              <span>Sign in</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'faq'}}
+              <i class='icon-bullhorn'></i>
+              <span>FAQ</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'orders'}}
+              <i class='icon-inbox'></i>
+              <span>Orders</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'search_results'}}
+              <i class='icon-search'></i>
+              <span>Search results</span>
+            {{/link-to}}
+          </li>
+          <li class=''>
+            {{#link-to 'blank'}}
+              <i class='icon-circle-blank'></i>
+              <span>Blank page</span>
+            {{/link-to}}
+          </li>
+        </ul>
+        {{/if}}
+      </li>
+      <li>
+        <a {{action 'toggle' 'layouts'}} class='dropdown-collapse ' href='#'>
+          <i class='icon-cog'></i>
+          <span>Layouts</span>
+          <i class='icon-angle-down angle-down'></i>
+        </a>
+        {{#if expandLayouts}}
+        <ul class='in nav nav-stacked'>
+          <li>
+            {{#link-to 'closed_navigation'}}
+              <i class='icon-caret-right'></i>
+              <span>Closed navigation</span>
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'fixed_header'}}
+              <i class='icon-caret-right'></i>
+              <span>Fixed header</span>
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'fixed_navigation'}}
+              <i class='icon-caret-right'></i>
+              <span>Fixed navigation</span>
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'fixed_navigation_and_header'}}
+              <i class='icon-caret-right'></i>
+              <span>Fixed navigation &amp; header</span>
+            {{/link-to}}
+          </li>
+        </ul>
+        {{/if}}
+      </li>
+      <li>
+        {{#link-to email_templates}}
+          <i class='icon-mail-reply'></i>
+          <span>Email templates</span>
+        {{/link-to}}
+      </li>
+    </ul>
+  </div>
+</nav>

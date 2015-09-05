@@ -1,0 +1,36 @@
+<header>
+  <nav class='navbar navbar-default'>
+    {{#link-to 'index' class='navbar-brand'}}
+      Start-up.solutions
+    {{/link-to}}
+    <ul class='nav'>
+      <li>
+        {{#link-to 'index' class='navbar'}}
+          Home
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'index' class='navbar'}}
+          About
+        {{/link-to}}
+      </li>
+    </ul>
+  </nav>
+</header>
+{{#if breadcrumbs}}
+<nav class="navbar navbar-secondary" role="navigation">
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      {{#nav-progress-button breadcrumbs=breadcrumbs route='themes.index'}}
+        <i class="icon-star-empty"></i> Select a Theme
+      {{/nav-progress-button}}
+      {{#nav-progress-button breadcrumbs=breadcrumbs route='pages.new'}}
+        <i class="icon-columns"></i> Choose a Layout
+      {{/nav-progress-button}}
+      {{#nav-progress-button breadcrumbs=breadcrumbs route='editor'}}
+        <i class="icon-edit"></i> Customize Content
+      {{/nav-progress-button}}
+    </ul>
+  </div>
+</nav>
+{{/if}}

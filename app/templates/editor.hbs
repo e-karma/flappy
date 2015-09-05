@@ -1,0 +1,19 @@
+{{#sub-nav}}
+  {{#each theme.sections}}
+      <a {{action 'addSection' this}} href='#'>
+        {{colored-button buttonstyle="info" value=this style="null"}}
+      </a>
+  {{/each}}
+{{/sub-nav}}
+{{#page-body}}
+  <h1>Editor</h1>
+  <div class='color-pickers'>
+    <h3>Choose colors</h3>
+    Light: {{color-picker color=theme.styles.lightColor}}
+    Mid: {{color-picker color=theme.styles.midColor}}
+    Dark: {{color-picker color=theme.styles.darkColor}}
+  </div>
+  <div class="page-editor">
+    {{render-page model theme}}
+  </div>
+{{/page-body}}

@@ -169,7 +169,7 @@ The second template is a section template. Section templates provide HTML for th
 For example, the sailing theme manifest specified that a paragraph-text section was available. This section should have a template in the `app/templates/themes/sailing/` directory:
 
 ```JavaScript
-{{! app/templates/themes/sailing/paragraph-textt".hbs }
+{{! app/templates/themes/sailing/paragraph-textt.hbs }
 <div>
   {{text}}
 </div>

@@ -1,0 +1,116 @@
+<ul>
+  <li>
+    <a {{action 'toggle' 'layouts'}} class='dropdown-collapse ' href='#'>
+      <i class='icon-cog'></i>
+      <span>Layouts</span>
+      <i class='icon-angle-down angle-down'></i>
+    </a>
+    {{#if expandLayouts}}
+    <ul class='in nav nav-stacked'>
+      <li>
+        {{#link-to 'closed_navigation'}}
+          <i class='icon-caret-right'></i>
+          <span>Closed navigation</span>
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'fixed_header'}}
+          <i class='icon-caret-right'></i>
+          <span>Fixed header</span>
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'fixed_navigation'}}
+          <i class='icon-caret-right'></i>
+          <span>Fixed navigation</span>
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'fixed_navigation_and_header'}}
+          <i class='icon-caret-right'></i>
+          <span>Fixed navigation &amp; header</span>
+        {{/link-to}}
+      </li>
+    </ul>
+    {{/if}}
+  </li>
+  <li>
+    <a {{action 'toggle' 'pages'}} class='dropdown-collapse ' href='#'>
+      <i class='icon-book'></i>
+      <span>Example pages</span>
+      <i class='icon-angle-down angle-down'></i>
+    </a>
+    {{#if expandPages}}
+    <ul class='in nav nav-stacked'>
+      <li class=''>
+        <!--
+
+        -- THESE ARE MISSING --
+          <i class='icon-money'></i>
+          <span>Invoice</span>
+-->
+      </li>
+      <li class=''>
+        {{#link-to 'timeline'}}
+          <i class='icon-time'></i>
+          <span>Timeline</span>
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'pricing_tables'}}
+          <i class='icon-table'></i>
+          <span>Pricing tables</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'user_profile'}}
+          <i class='icon-user'></i>
+          <span>User profile</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'err404'}}
+          <i class='icon-question-sign'></i>
+          <span>404 Error</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'err500'}}
+          <i class='icon-cogs'></i>
+          <span>500 Error</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'sign_in'}}
+          <i class='icon-signin'></i>
+          <span>Sign in</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'faq'}}
+          <i class='icon-bullhorn'></i>
+          <span>FAQ</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'orders'}}
+          <i class='icon-inbox'></i>
+          <span>Orders</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'search_results'}}
+          <i class='icon-search'></i>
+          <span>Search results</span>
+        {{/link-to}}
+      </li>
+      <li class=''>
+        {{#link-to 'blank'}}
+          <i class='icon-circle-blank'></i>
+          <span>Blank page</span>
+        {{/link-to}}
+      </li>
+    </ul>
+    {{/if}}
+  </li>
+</ul>

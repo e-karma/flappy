@@ -1,0 +1,149 @@
+<section id='content'>
+  <div class='container'>
+    <div class='row' id='content-wrapper'>
+      <div class='col-xs-12'>
+
+        <div class='page-header page-header-with-buttons'>
+          <h1 class='pull-left'>
+            <i class='icon-dashboard'></i>
+            <span>Market Place</span>
+          </h1>
+
+        </div>
+        <div class='tabbable'>
+          <ul class='nav nav-tabs'>
+            <li class='active'>
+              <a data-toggle='tab' href='#tab1'>
+                <i class='icon-indent-left'></i>
+                Overview
+              </a>
+            </li>
+            <li>
+              <a data-toggle='tab' href='#tab2'>
+                <i class='icon-edit text-red'></i>
+               SEO
+              </a>
+            </li>
+            <li>
+              <a data-toggle='tab' href='#tab3'>
+                <i class='icon-ambulance text-blue'></i>
+                Social Media
+              </a>
+            </li>
+          </ul>
+          <div class='tab-content'>
+            <div class='tab-pane active' id='tab1'>
+
+
+
+              <p>I'm in Section 1.</p>
+
+
+
+
+            </div>
+            <div class='tab-pane' id='tab2'>
+
+
+
+
+              <p>Howdy, I'm in Section 2.</p>
+
+
+
+
+            </div>
+            <div class='tab-pane' id='tab3'>
+
+
+
+
+              <p>What up girl, this is Section 3.</p>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id='main-nav-bg'></div>
+  <nav id='main-nav'>
+    <div class='navigation'>
+      <div class='search'>
+        <form action='search_results.html' method='get'>
+          <div class='search-wrapper'>
+            <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text" />
+            <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          </div>
+        </form>
+      </div>
+      <ul class='nav nav-stacked'>
+        <li>
+          {{#link-to 'dashboard'}}
+            <i class='icon-dashboard'></i>
+            <span>Dashboard</span>
+          {{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'marketing'}}
+          <i class='icon-cog'></i>
+          <span>Marketing</span>
+        {{/link-to}}
+        </li>
+        <li>
+        {{#link-to 'blog'}}
+          <i class='icon-tint'></i>
+          <span>Blog</span>
+      {{/link-to}}
+      </li>
+
+        <li class=''>
+          {{#link-to 'marketplace'}}
+            <i class='icon-star'></i>
+            <span>MarketPlace</span>
+          {{/link-to}}
+        </li>
+
+        <li class=''>
+          {{#link-to 'email'}}
+            <i class='icon-table'></i>
+            <span>E-Mail</span>
+          {{/link-to}}
+        </li>
+
+        <li class=''>
+          {{#link-to 'calendar'}}
+            <i class='icon-calendar'></i>
+            <span>Calendar</span>
+          {{/link-to}}</li>
+        <li>
+          {{#link-to 'manage'}}
+            <i class='icon-th'></i>
+            <span>Manage</span>
+          {{/link-to}}
+        </li>
+      </ul>
+    </div>
+  </nav>

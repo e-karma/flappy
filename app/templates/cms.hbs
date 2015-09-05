@@ -1,0 +1,171 @@
+
+  <div id='main-nav-bg'></div>
+  <nav id='main-nav'>
+    <div class='navigation'>
+      <div class='search'>
+        <form action='search_results.html' method='get'>
+          <div class='search-wrapper'>
+            <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text" />
+            <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          </div>
+        </form>
+      </div>
+      <ul class='nav nav-stacked'>
+        <li>
+          {{#link-to 'dashboard'}}
+            <i class='icon-dashboard'></i>
+            <span>Dashboard</span>
+          {{/link-to}}
+        </li>
+        <li>
+          <a {{action 'toggle' 'marketing'}} href='#'>
+            <i class='icon-edit'></i>
+            <span>Marketing</span>
+            <i class='icon-angle-down angle-down'></i>
+          </a>
+
+          {{#if expandForms}}
+            <ul class='in nav nav-stacked dropdown-menu'>
+              <li>
+                {{#link-to 'form_styles'}}
+                  <i class='icon-caret-right'></i>
+                  <span>Form styles and features</span>
+                {{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'form_components'}}
+                  <i class='icon-caret-right'></i>
+                  <span>Form components</span>
+                {{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'validations'}}
+                  <i class='icon-caret-right'></i>
+                  <span>Validations</span>
+                {{/link-to}}
+              </li>
+              <li>
+                {{# link-to 'wizard'}}
+                  <i class='icon-caret-right'></i>
+                  <span>Wizard</span>
+                {{/link-to}}
+              </li>
+            </ul>
+          {{/if}}
+        </li>
+        <li>
+          <a {{action 'toggle' 'community'}} class='dropdown-collapse ' href='#'>
+            <i class='icon-tint'></i>
+            <span>Community</span>
+            <i class='icon-angle-down angle-down'></i>
+          </a>
+          {{#if expandWidgets}}
+          <ul class='in nav nav-stacked'>
+            <li class=''>
+              {{#link-to 'ui_elements'}}
+                <i class='icon-caret-right'></i>
+                <span>UI Elements</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'widgets'}}
+                <i class='icon-caret-right'></i>
+                <span>Widgets</span>
+              {{/link-to}}
+            </li>
+          </ul>
+          {{/if}}
+        </li>
+        <li class=''>
+          {{#link-to 'marketplace'}}
+            <i class='icon-star'></i>
+            <span>MarketPlace</span>
+          {{/link-to}}
+        </li>
+        
+        <li class=''>
+          {{#link-to email}}
+            <i class='icon-table'></i>
+            <span>E-Mail</span>
+          {{/link-to}}
+        </li>
+        
+        <li>
+          <a {{action 'toggle' 'calendar'}} class='dropdown-collapse' href='#'>
+            <i class='icon-cogs'></i>
+            <span>Calendar</span>
+            <i class='icon-angle-down angle-down'></i>
+          </a>
+          {{#if expandComponents}}
+          <ul class='in nav nav-stacked'>
+            <li class=''>
+              {{#link-to 'charts'}}
+                <i class='icon-bar-chart'></i>
+                <span>Charts</span>
+              {{/link-to}}
+            </li>
+            <li class='active'>
+              {{#link-to 'address_book'}}
+                <i class='icon-envelope'></i>
+                <span>Address book</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'chats'}}
+                <i class='icon-comments'></i>
+                <span>Chats</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'filetrees'}}
+                <i class='icon-list-ul'></i>
+                <span>File trees</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'fileupload'}}
+                <i class='icon-file'></i>
+                <span>Fileupload</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'todo'}}
+                <i class='icon-list-alt'></i>
+                <span>Todo list</span>
+              {{/link-to}}
+            </li>
+            <li class=''>
+              {{#link-to 'wysiwyg'}}
+                <i class='icon-paste'></i>
+                <span>WYSIWYG</span>
+              {{/link-to}}
+            </li>
+          </ul>
+          {{/if}}
+        </li>
+        <li>
+          <a {{action 'toggle' 'manage'}} class='dropdown-collapse' href='#'>
+            <i class='icon-th'></i>
+            <span>Manage</span>
+            <i class='icon-angle-down angle-down'></i>
+          </a>
+          {{#if expandComponents}}
+          <ul class='in nav nav-stacked'>
+            <li class=''>
+              {{#link-to ''}}
+                <i class='icon-bar-chart'></i>
+                <span>Charts</span>
+              {{/link-to}}
+            </li>
+          </ul>
+          {{/if}}
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<script id="dashboard" type="text/x-handlebars-template">
+<h1>Hello</h1>
+
+  
+</script>
